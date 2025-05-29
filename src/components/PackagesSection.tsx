@@ -4,71 +4,82 @@ import { Check, X, Sparkles } from 'lucide-react';
 const packages = [
   {
     id: 1,
-    name: "Basic",
-    description: "Cocok untuk brand baru",
+    name: "Rink Starter",
+    description: "Cocok untuk memulai branding di website",
     price: "Rp3.2 Jt",
     features: [
-      { text: "5-page responsive website", included: true },
+      { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
-      { text: "Contact form", included: true },
-      { text: "Basic SEO setup", included: true },
-      { text: "Social media integration", included: true },
-      { text: "Content management system", included: false },
-      { text: "E-commerce functionality", included: false },
-      { text: "Custom animations", included: false },
+      { text: "Konfigurasi SEO", included: true },
+      { text: "Google Analytics", included: true },
+      { text: "Embed Postingan Media Sosial", included: true },
+      { text: "5 Halaman Tambahan", included: true },
+      { text: "Waktu pembuatan ±10 hari kerja", included: true },
       { text: "Premium support", included: false },
+      { text: "Manajemen Artikel", included: false },
+      { text: "Manajemen penjualan", included: false },
+      { text: "Manajemen pembayaran", included: false },
+      { text: "Request fitur tambahan (+300rb)", included: false },
     ]
   },
   {
     id: 2,
-    name: "Standard",
-    description: "Our most popular package for growing businesses",
-    price: "$1,499",
+    name: "Rink Medium",
+    description: "Cocok untuk bisnis yang ingin brandingnnya dikenal",
+    price: "Rp4.5 Jt",
     features: [
-      { text: "10-page responsive website", included: true },
+      { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
-      { text: "Contact form", included: true },
-      { text: "Advanced SEO setup", included: true },
-      { text: "Social media integration", included: true },
-      { text: "Content management system", included: true },
-      { text: "Basic analytics integration", included: true },
-      { text: "Custom animations", included: false },
-      { text: "Premium support", included: false },
+      { text: "Konfigurasi SEO", included: true },
+      { text: "Google Analytics", included: true },
+      { text: "Embed Postingan Media Sosial", included: true },
+      { text: "8 Halaman Tambahan", included: true },
+      { text: "Waktu pembuatan ±12 hari kerja", included: true },
+      { text: "Premium support", included: true },
+      { text: "Manajemen Artikel", included: true },
+      { text: "Manajemen penjualan", included: true },
+      { text: "Manajemen pembayaran", included: false },
+      { text: "Request fitur tambahan (+300rb)", included: false },
     ],
     popular: true
   },
   {
     id: 3,
-    name: "Premium",
-    description: "For businesses requiring advanced functionality",
-    price: "$2,999",
+    name: "Rink Expert",
+    description: "Cocok untuk bisnis yang ingin seluruhnya dikenal",
+    price: "Rp5 Jt",
     features: [
-      { text: "15-page responsive website", included: true },
+      { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
-      { text: "Contact form", included: true },
-      { text: "Advanced SEO setup", included: true },
-      { text: "Social media integration", included: true },
-      { text: "Content management system", included: true },
-      { text: "E-commerce functionality", included: true },
-      { text: "Custom animations", included: true },
+      { text: "Konfigurasi SEO", included: true },
+      { text: "Google Analytics", included: true },
+      { text: "Embed Postingan Media Sosial", included: true },
+      { text: "10 Halaman Tambahan", included: true },
+      { text: "Waktu pembuatan ±14 hari kerja", included: true },
       { text: "Premium support", included: true },
+      { text: "Manajemen Artikel", included: true },
+      { text: "Manajemen penjualan", included: true },
+      { text: "Manajemen pembayaran", included: true },
+      { text: "Request fitur tambahan (+300rb)", included: true },
     ]
   },
   {
     id: 4,
-    name: "Custom",
-    description: "Tailored solutions for unique business requirements",
+    name: "Rink Custom",
+    description: "Cocok untuk bisnis yang ingin websitenya sesuai keinginan",
     price: "Custom",
     features: [
-      { text: "Unlimited pages", included: true },
-      { text: "Custom design & development", included: true },
-      { text: "Advanced functionality", included: true },
-      { text: "Priority support", included: true },
-      { text: "Dedicated project manager", included: true },
-      { text: "Ongoing maintenance available", included: true },
-      { text: "Performance optimization", included: true },
-      { text: "Training & documentation", included: true },
-      { text: "Future-proof scalability", included: true },
+      { text: "UI/UX Custom", included: true },
+      { text: "Mobile-friendly design", included: true },
+      { text: "Konfigurasi SEO", included: true },
+      { text: "Google Analytics", included: true },
+      { text: "Embed Postingan Media Sosial", included: true },
+      { text: "Unlimited Halaman Tambahan", included: true },
+      { text: "Waktu pembuatan kondisional", included: true },
+      { text: "Eksklusif support", included: true },
+      { text: "Manajemen Artikel", included: true },
+      { text: "Manajemen penjualan", included: true },
+      { text: "Manajemen pembayaran", included: true },
     ],
     custom: true
   }
@@ -86,7 +97,7 @@ const PackagesSection: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-secondary-800/80 max-w-3xl mx-auto text-lg">
-            Choose the perfect web development package for your business needs and budget.
+            Pilih paket yang sesuai dengan keinginan Anda.
           </p>
         </div>
 
@@ -157,7 +168,7 @@ const PackagesSection: React.FC = () => {
                         : 'bg-secondary-950 hover:bg-secondary-900 text-white'
                   }`}
                 >
-                  {pkg.custom ? 'Request Quote' : 'Get Started'}
+                  {pkg.custom ? 'Lakukan Penawaran' : 'Pilih Paket'}
                 </button>
               </div>
             </div>

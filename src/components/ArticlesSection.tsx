@@ -37,11 +37,11 @@ const ArticlesSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-950 font-heading mb-4">
-            Latest <span className="text-primary">Articles</span>
+            <span className="text-primary">Informasi</span> dari Penulis
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-secondary-800/80 max-w-3xl mx-auto text-lg">
-            Stay updated with the latest trends, tips, and insights in web development and digital marketing.
+            Kami berbagi artikel dan panduan untuk membantu Anda memahami lebih dalam tentang dunia website branding dan digital marketing.
           </p>
         </div>
 
@@ -89,9 +89,9 @@ const ArticlesSection: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-md font-medium transition-all duration-200">
+          {/* <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-md font-medium transition-all duration-200">
             View All Articles
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

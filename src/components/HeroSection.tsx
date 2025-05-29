@@ -20,7 +20,7 @@ const slides = [
   },
   {
     id: 2,
-    title: "Desain Elegan, Teknologi Terbaru, Fokus pada Hasil",
+    title: "Website Kamu, Identitas Bisnis Kamu",
     subtitle: "Website Cepat, Branding Hebat",
     description: "Website kamu akan dirancang khusus, tanpa template jadi-jadian. Desainnya disesuaikan dengan karakter bisnismu, hasilnya jelas terasa.",
     image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
