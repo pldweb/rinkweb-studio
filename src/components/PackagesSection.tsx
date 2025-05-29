@@ -5,8 +5,8 @@ const packages = [
   {
     id: 1,
     name: "Basic",
-    description: "Perfect for small businesses just getting started online",
-    price: "$799",
+    description: "Cocok untuk brand baru",
+    price: "Rp3.2 Jt",
     features: [
       { text: "5-page responsive website", included: true },
       { text: "Mobile-friendly design", included: true },
