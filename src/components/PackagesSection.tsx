@@ -82,7 +82,7 @@ const PackagesSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-950 font-heading mb-4">
-            Our <span className="text-primary">Packages</span>
+            <span className="text-primary">Harga Paket</span> Website Branding
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-secondary-800/80 max-w-3xl mx-auto text-lg">

@@ -7,30 +7,32 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { ArrowRight } from 'lucide-react';
 
+let wa = "https://wa.me/62895365441554"; 
+
 const slides = [
   {
     id: 1,
-    title: "Expert Web Development Services",
-    subtitle: "Turning your ideas into stunning websites",
-    description: "Our team creates beautiful, responsive websites optimized for performance and user experience.",
+    title: "Branding Website dengan Rinkweb Studio",
+    subtitle: "Website Cepat, Branding Hebat",
+    description: "Bantu bisnis kamu tampil beda dan dipercaya sejak detik pertama orang melihatnya.",
     image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    ctaText: "Get a Free Quote",
+    ctaText: "Hubungi Segera",
   },
   {
     id: 2,
-    title: "Custom Web Solutions",
-    subtitle: "Tailored to your specific business needs",
-    description: "We build custom applications and websites that perfectly align with your business goals and requirements.",
+    title: "Desain Elegan, Teknologi Terbaru, Fokus pada Hasil",
+    subtitle: "Website Cepat, Branding Hebat",
+    description: "Website kamu akan dirancang khusus, tanpa template jadi-jadian. Desainnya disesuaikan dengan karakter bisnismu, hasilnya jelas terasa.",
     image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    ctaText: "View Our Work",
+    ctaText: "Lihat Karya",
   },
   {
     id: 3,
-    title: "E-commerce Excellence",
-    subtitle: "Boost your online sales with our expertise",
-    description: "From small shops to large marketplaces, we create e-commerce solutions that drive conversions.",
+    title: "Untuk Anda yang mau website cepat",
+    subtitle: "Website Cepat, Branding Hebat",
+    description: "Rink Web Studio hadir untuk kamu yang serius bangun citra profesional dan nggak main-main soal kualitas digital presence.",
     image: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    ctaText: "Start Selling Online",
+    ctaText: "Lihat Harga",
   }
 ];
 
@@ -69,13 +71,13 @@ const HeroSection: React.FC = () => {
                     {slide.description}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <button className="bg-primary hover:bg-primary-600 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center">
+                    <a href={wa} className="bg-primary hover:bg-primary-600 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center">
                       {slide.ctaText}
                       <ArrowRight className="ml-2 w-4 h-4" />
-                    </button>
-                    <button className="border-2 border-white/80 hover:border-white text-white px-6 py-3 rounded-md font-medium transition-all duration-200 hover:bg-white/10">
+                    </a>
+                    {/* <button className="border-2 border-white/80 hover:border-white text-white px-6 py-3 rounded-md font-medium transition-all duration-200 hover:bg-white/10">
                       Learn More
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

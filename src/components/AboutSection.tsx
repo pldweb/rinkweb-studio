@@ -7,12 +7,9 @@ const AboutSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-950 font-heading mb-4">
-            About <span className="text-primary">WebCraft Pro</span>
+            Kenalan Sama <span className="text-primary">Rinkweb Studio</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-secondary-800/80 max-w-3xl mx-auto text-lg">
-            We craft exceptional web experiences that drive business growth and user engagement.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -28,8 +25,8 @@ const AboutSection: React.FC = () => {
               <div className="flex items-center">
                 <CalendarClock className="w-10 h-10 mr-4" />
                 <div>
-                  <p className="text-sm font-medium opacity-80">Established</p>
-                  <p className="text-2xl font-bold">2018</p>
+                  <p className="text-sm font-medium opacity-80">Launching</p>
+                  <p className="text-2xl font-bold">2025</p>
                 </div>
               </div>
             </div>
@@ -37,32 +34,29 @@ const AboutSection: React.FC = () => {
 
           <div>
             <h3 className="text-2xl font-bold text-secondary-900 mb-4 font-heading">
-              Delivering Digital Excellence Since 2018
+              Jasa Website Branding yang hadir di Era AI
             </h3>
             <p className="text-secondary-800/80 mb-6">
-              WebCraft Pro was founded with a simple mission: to help businesses succeed online through exceptional web development. Over the years, we've grown from a small startup to a full-service web development agency trusted by clients worldwide.
-            </p>
-            <p className="text-secondary-800/80 mb-8">
-              Our team of experienced developers, designers, and digital strategists work together to create websites and web applications that not only look beautiful but also deliver measurable results for our clients.
+              Rinkweb Studio adalah studio kreatif digital yang fokus bantuin brand bisnis mu melalui website yang nggak cuma keren, tapi juga punya impact. Itu wajah pertamamu di dunia digital dan wajah pertama itu harus meyakinkan, profesional, dan punya karakter. 
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200">
                 <Users className="w-8 h-8 text-primary mb-2" />
-                <h4 className="font-bold text-secondary-900">25+</h4>
-                <p className="text-secondary-800/70 text-sm">Team Members</p>
+                <h4 className="font-bold text-secondary-900">1</h4>
+                <p className="text-secondary-800/70 text-sm">Tim Kami</p>
               </div>
               
               <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200">
                 <Award className="w-8 h-8 text-primary mb-2" />
-                <h4 className="font-bold text-secondary-900">100+</h4>
-                <p className="text-secondary-800/70 text-sm">Projects Completed</p>
+                <h4 className="font-bold text-secondary-900">20+</h4>
+                <p className="text-secondary-800/70 text-sm">Projek Selesai</p>
               </div>
               
               <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200">
                 <BarChart4 className="w-8 h-8 text-primary mb-2" />
-                <h4 className="font-bold text-secondary-900">98%</h4>
-                <p className="text-secondary-800/70 text-sm">Client Satisfaction</p>
+                <h4 className="font-bold text-secondary-900">100%</h4>
+                <p className="text-secondary-800/70 text-sm">Rate Projek</p>
               </div>
             </div>
 

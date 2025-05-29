@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
+import logo from '../assets/logo.png'; // Adjust the path as necessary
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,12 +29,10 @@ const Header: React.FC = () => {
         <nav className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <Globe className={`w-8 h-8 ${isScrolled ? 'text-primary' : 'text-white'}`} />
-              <span className={`ml-2 text-xl font-bold font-heading ${
-                isScrolled ? 'text-secondary-950' : 'text-white'
+              <img src={logo} className={`ml-2 max-h-[40px] ${
+                isScrolled ? 'filter-none' : 'filter brightness-0 invert'
               }`}>
-                WebCraft Pro
-              </span>
+              </img>
             </a>
           </div>
 

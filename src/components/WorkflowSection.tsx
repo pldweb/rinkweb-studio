@@ -4,36 +4,36 @@ import { PackageCheck, CreditCard, MessageCircle, Code, CheckCircle } from 'luci
 const steps = [
   {
     id: 1,
-    title: "Choose Package",
-    description: "Select the web development package that best fits your needs and budget.",
+    title: "Pilih Paket",
+    description: "Sesuaikan kebutuhan website Anda dengan paket yang kami tawarkan.",
     icon: PackageCheck,
     color: "bg-blue-100 text-blue-600",
   },
   {
     id: 2,
-    title: "Make Payment",
-    description: "Secure your project with a deposit payment through our secure payment system.",
+    title: "Lakukan Pembayaran",
+    description: "Aman dan mudah, lakukan pembayaran melalui metode yang tersedia.",
     icon: CreditCard,
     color: "bg-green-100 text-green-600",
   },
   {
     id: 3,
-    title: "Consultation",
-    description: "Discuss your requirements, goals, and vision with our expert team.",
+    title: "Konsultasi Branding",
+    description: "Diskusikan branding bisnis Anda dengan tim kami untuk hasil terbaik.",
     icon: MessageCircle,
     color: "bg-purple-100 text-purple-600",
   },
   {
     id: 4,
-    title: "Development",
-    description: "Our team builds your website with regular updates and revisions.",
+    title: "Pengerjaan Website",
+    description: "Tim kami akan mulai mengerjakan website sesuai yang telah disepakati.",
     icon: Code,
     color: "bg-primary-100 text-primary-600",
   },
   {
     id: 5,
-    title: "Completion",
-    description: "Final review, approval, and launch of your new website.",
+    title: "Launching Website",
+    description: "Website dengan branding terbaik siap digunakan dan diluncurkan ke publik.",
     icon: CheckCircle,
     color: "bg-teal-100 text-teal-600",
   },
@@ -45,11 +45,11 @@ const WorkflowSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-secondary-950 font-heading mb-4">
-            How We <span className="text-primary">Work</span>
+            Bagaimana <span className="text-primary">Alur Kerja</span> Kami?
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-secondary-800/80 max-w-3xl mx-auto text-lg">
-            Our streamlined process ensures your website is delivered on time, on budget, and exceeds expectations.
+            Proses yang cepat, detail dan profesional untuk memastikan website yang siap digunakan dengan kualitas terbaik.
           </p>
         </div>
 
