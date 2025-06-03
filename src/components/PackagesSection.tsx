@@ -6,7 +6,7 @@ const packages = [
     id: 1,
     name: "Rink Starter",
     description: "Cocok untuk memulai branding di website",
-    price: "Rp3.2 Jt",
+    price: "Rp3.6 Jt",
     features: [
       { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
@@ -26,7 +26,7 @@ const packages = [
     id: 2,
     name: "Rink Medium",
     description: "Cocok untuk bisnis yang ingin brandingnnya dikenal",
-    price: "Rp4.5 Jt",
+    price: "Rp4.8 Jt",
     features: [
       { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
@@ -47,7 +47,7 @@ const packages = [
     id: 3,
     name: "Rink Expert",
     description: "Cocok untuk bisnis yang ingin seluruhnya dikenal",
-    price: "Rp5 Jt",
+    price: "Rp5.5 Jt",
     features: [
       { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
@@ -66,7 +66,7 @@ const packages = [
   {
     id: 4,
     name: "Rink Custom",
-    description: "Cocok untuk bisnis yang ingin websitenya sesuai keinginan",
+    description: "Ingin punya website atau aplikasi custom? diskusikan segera dengan kami",
     price: "Custom",
     features: [
       { text: "UI/UX Custom", included: true },

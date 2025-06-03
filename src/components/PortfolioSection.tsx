@@ -1,55 +1,96 @@
 import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
+import projectmc from '../assets/project-mc.png';
+import projectsb from '../assets/project-sb.png';
+import projectst from '../assets/project-st.png';
+import projectsk from '../assets/project-sk.png';
+import projecttt from '../assets/project-tt.png';
+import projectbs from '../assets/project-bs.png';
+import projectkk from '../assets/project-kk.png'; 
+import projectspa from '../assets/project-spa.png'; 
+import projectdtj from '../assets/project-dtj.png'; 
+
+
 
 const categories = [
   "All",
-  "E-commerce",
-  "Landing Pages"
+  "Website Development",
+  "Mobile App"
 ];
 
 const projects = [
   {
     id: 1,
-    title: "Luxury Fashion E-commerce",
-    category: "E-commerce",
-    image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "A high-end fashion store with advanced filtering and personalization."
+    title: "Tazkiyah Tour - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projecttt,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://luxury-fashion-ecommerce.com" // Example link, replace with actual project
   },
   {
     id: 2,
-    title: "Financial Services Website",
-    category: "Corporate",
-    image: "https://images.pexels.com/photos/7682340/pexels-photo-7682340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Modern website for a financial consulting firm with custom calculators."
+    title: "MyCommerce - B2B E-commerce",
+    category: "Website Development",
+    image: projectmc,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://pldweb.github.io/mc-landing"
   },
-  {
+  { 
     id: 3,
-    title: "Photographer Portfolio",
-    category: "Portfolio",
-    image: "https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Elegant portfolio showcasing photography work with custom galleries."
+    title: "Sehat Bahagia - Community Pyschology",
+    category: "Website Development",
+    image: projectsb,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sehatbahagia.com"
   },
-  {
+  { 
     id: 4,
-    title: "Product Launch Page",
-    category: "Landing Pages",
-    image: "https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "High-converting landing page for a tech product launch."
+    title: "SKET Creative - Creative Agency",
+    category: "Website Development",
+    image: projectsk,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sketcreative.com"
   },
-  {
+  { 
     id: 5,
-    title: "Organic Food Store",
-    category: "E-commerce",
-    image: "https://images.pexels.com/photos/8105035/pexels-photo-8105035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "E-commerce platform for organic food products with subscription options."
+    title: "SINT Travel - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projectst,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sehatbahagia.com"
   },
-  {
+  { 
     id: 6,
-    title: "Law Firm Website",
-    category: "Corporate",
-    image: "https://images.pexels.com/photos/8112195/pexels-photo-8112195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    description: "Professional website for a law firm with appointment scheduling."
-  }
+    title: "Bernia Wisata - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projectbs,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sehatbahagia.com"
+  },
+  { 
+    id: 7,
+    title: "Salespage Aksana - Wedding Organizer Management System",
+    category: "Website Development",
+    image: projectspa,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sehatbahagia.com"
+  },
+  { 
+    id: 8,
+    title: "KasirKu",
+    category: "Website Development",
+    image: projectkk,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sehatbahagia.com"
+  },
+  { 
+    id: 9,
+    title: "Publika Dimensi Terbit Digital",
+    category: "Website Development",
+    image: projectdtj,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://sehatbahagia.com"
+  },
 ];
 
 const PortfolioSection: React.FC = () => {
@@ -106,10 +147,10 @@ const PortfolioSection: React.FC = () => {
                   }`}
                 />
                 <div className="absolute inset-0 bg-secondary-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-primary hover:bg-primary-600 text-white px-4 py-2 rounded-md font-medium transition-all duration-200 flex items-center">
+                  <a href={project.link} className="bg-primary hover:bg-primary-600 text-white px-4 py-2 rounded-md font-medium transition-all duration-200 flex items-center">
                     View Project
                     <ExternalLink className="ml-2 w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="p-6">
