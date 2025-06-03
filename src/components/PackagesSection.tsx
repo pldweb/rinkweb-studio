@@ -159,7 +159,7 @@ const PackagesSection: React.FC = () => {
                   ))}
                 </div>
                 
-                <button 
+                <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rinkweb%20Studio%0A%0ABisakah%20kita%20agendakan%20diskusi?'
                   className={`w-full py-3 rounded-md font-medium transition-all duration-200 ${
                     pkg.custom 
                       ? 'bg-white text-secondary-950 hover:bg-gray-100' 
@@ -169,7 +169,7 @@ const PackagesSection: React.FC = () => {
                   }`}
                 >
                   {pkg.custom ? 'Lakukan Penawaran' : 'Pilih Paket'}
-                </button>
+                </a>
               </div>
             </div>
           ))}
