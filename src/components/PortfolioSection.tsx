@@ -9,6 +9,8 @@ import projectbs from '../assets/project-bs.png';
 import projectkk from '../assets/project-kk.png'; 
 import projectspa from '../assets/project-spa.png'; 
 import projectdtj from '../assets/project-dtj.png'; 
+import projectaw from '../assets/project-aw.png'; 
+
 
 
 
@@ -57,7 +59,7 @@ const projects = [
     category: "Website Development",
     image: projectst,
     description: "A high-end fashion store with advanced filtering and personalization.",
-    link: "https://sehatbahagia.com"
+    link: "https://sinttravel.com"
   },
   { 
     id: 6,
@@ -65,7 +67,7 @@ const projects = [
     category: "Website Development",
     image: projectbs,
     description: "A high-end fashion store with advanced filtering and personalization.",
-    link: "https://sehatbahagia.com"
+    link: "https://berniawisata.com"
   },
   { 
     id: 7,
@@ -73,7 +75,7 @@ const projects = [
     category: "Website Development",
     image: projectspa,
     description: "A high-end fashion store with advanced filtering and personalization.",
-    link: "https://sehatbahagia.com"
+    link: "https://pldweb.github.io/Salespage-Aksana"
   },
   { 
     id: 8,
@@ -81,7 +83,7 @@ const projects = [
     category: "Website Development",
     image: projectkk,
     description: "A high-end fashion store with advanced filtering and personalization.",
-    link: "https://sehatbahagia.com"
+    link: "https://pldweb.github.io/kasirku"
   },
   { 
     id: 9,
@@ -89,7 +91,15 @@ const projects = [
     category: "Website Development",
     image: projectdtj,
     description: "A high-end fashion store with advanced filtering and personalization.",
-    link: "https://sehatbahagia.com"
+    link: "https://publika.dimensiterbitdigital.com"
+  },
+  { 
+    id: 10,
+    title: "Arsicon - Contractor & Interior Design",
+    category: "Website Development",
+    image: projectaw,
+    description: "A high-end fashion store with advanced filtering and personalization.",
+    link: "https://arsicon.vercel.app"
   },
 ];
 

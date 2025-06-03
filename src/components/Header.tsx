@@ -49,9 +49,9 @@ const Header: React.FC = () => {
                 {item}
               </a>
             ))}
-            <button className="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg">
-              Get Started
-            </button>
+            <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rinkweb%20Studio%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg">
+              Yuk Diskusi
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,9 +82,9 @@ const Header: React.FC = () => {
                   {item}
                 </a>
               ))}
-              <button className="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg w-full">
-                Get Started
-              </button>
+              <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rinkweb%20Studio%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg">
+              Yuk Diskusi
+            </a>
             </div>
           </div>
         )}
