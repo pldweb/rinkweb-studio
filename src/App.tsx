@@ -8,6 +8,7 @@ import PortfolioSection from './components/PortfolioSection';
 import ArticlesSection from './components/ArticlesSection';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import OwnerSection from './components/Owner';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <WorkflowSection />
         <PackagesSection />
         <PortfolioSection />
+        <OwnerSection />
         <ArticlesSection />
       </main>
       <Footer />
