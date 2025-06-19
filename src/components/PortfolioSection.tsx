@@ -25,7 +25,7 @@ const projects = [
   category: "Website Development",
   image: projecttt,
   description: "Website resmi Tazkiyah Tour untuk informasi paket Umrah & Haji.",
-  link: "https://luxury-fashion-ecommerce.com"
+  link: "https://tazkiyahtour.com"
 },
 {
   id: 2,
