@@ -57,7 +57,7 @@ const projects = [
   category: "Website Development",
   image: projectst,
   description: "Website SINT Travel untuk informasi dan pendaftaran Umrah & Haji.",
-  link: "https://sinttravel.com"
+  link: "https://sinttravel.co.id"
 },
 { 
   id: 6,
@@ -65,7 +65,7 @@ const projects = [
   category: "Website Development",
   image: projectbs,
   description: "Platform digital Bernia Wisata untuk layanan Umrah & Haji.",
-  link: "https://berniawisata.com"
+  link: "https://berniawisata.co.id"
 },
 { 
   id: 7,
