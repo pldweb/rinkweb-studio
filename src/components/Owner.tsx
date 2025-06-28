@@ -18,14 +18,14 @@ const OwnerSection: React.FC = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl">
                 <div className="flex space-x-3">
-                  <a 
+                  {/* <a 
                     href="https://facebook.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-secondary-950 text-white hover:bg-primary transition-colors duration-200 w-10 h-10 rounded-full flex items-center justify-center"
                   >
                     <Facebook className="w-5 h-5" />
-                  </a>
+                  </a> */}
                   <a 
                     href="https://instagram.com/rivaldipostman" 
                     target="_blank" 

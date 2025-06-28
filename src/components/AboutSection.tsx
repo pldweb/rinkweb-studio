@@ -21,20 +21,20 @@ const AboutSection: React.FC = () => {
                 className="w-full h-auto"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-xl hidden md:block">
+            {/* <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-xl hidden md:block">
               <div className="flex items-center">
                 <CalendarClock className="w-10 h-10 mr-4" />
                 <div>
-                  <p className="text-sm font-medium opacity-80">Launching</p>
-                  <p className="text-2xl font-bold">2025</p>
+                  <p className="text-sm font-medium opacity-80">Pengalaman</p>
+                  <p className="text-2xl font-bold">4+ tahun</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div>
             <h3 className="text-2xl font-bold text-secondary-900 mb-4 font-heading">
-              Jasa Website Branding yang hadir di Era AI
+              Jasa Website yang hadir di Era AI
             </h3>
             <p className="text-secondary-800/80 mb-6">
               Rinkweb Studio adalah studio kreatif digital yang fokus bantuin brand bisnis mu melalui website yang nggak cuma keren, tapi juga punya impact. Itu wajah pertamamu di dunia digital dan wajah pertama itu harus meyakinkan, profesional, dan punya karakter. 
@@ -43,8 +43,8 @@ const AboutSection: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200">
                 <Users className="w-8 h-8 text-primary mb-2" />
-                <h4 className="font-bold text-secondary-900">1</h4>
-                <p className="text-secondary-800/70 text-sm">Tim Kami</p>
+                <h4 className="font-bold text-secondary-900">4+ Tahun</h4>
+                <p className="text-secondary-800/70 text-sm">Pengalaman</p>
               </div>
               
               <div className="flex flex-col items-center text-center p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-200">

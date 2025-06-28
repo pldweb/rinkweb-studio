@@ -4,24 +4,24 @@ import { PackageCheck, CreditCard, MessageCircle, Code, CheckCircle } from 'luci
 const steps = [
   {
     id: 1,
+    title: "Konsultasi Website",
+    description: "Diskusikan kebutuhan website Anda dengan tim kami untuk hasil terbaik.",
+    icon: MessageCircle,
+    color: "bg-purple-100 text-purple-600",
+  },
+  {
+    id: 2,
     title: "Pilih Paket",
     description: "Sesuaikan kebutuhan website Anda dengan paket yang kami tawarkan.",
     icon: PackageCheck,
     color: "bg-blue-100 text-blue-600",
   },
   {
-    id: 2,
+    id: 3,
     title: "Lakukan Pembayaran",
     description: "Aman dan mudah, lakukan pembayaran melalui metode yang tersedia.",
     icon: CreditCard,
     color: "bg-green-100 text-green-600",
-  },
-  {
-    id: 3,
-    title: "Konsultasi Branding",
-    description: "Diskusikan branding bisnis Anda dengan tim kami untuk hasil terbaik.",
-    icon: MessageCircle,
-    color: "bg-purple-100 text-purple-600",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const steps = [
   {
     id: 5,
     title: "Launching Website",
-    description: "Website dengan branding terbaik siap digunakan dan diluncurkan ke publik.",
+    description: "Website dengan konsep branding terbaik siap digunakan dan diluncurkan ke publik.",
     icon: CheckCircle,
     color: "bg-teal-100 text-teal-600",
   },

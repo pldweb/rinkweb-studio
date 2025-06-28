@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
-import logo from '../assets/logo.png'; // Adjust the path as necessary
+import logo from '../assets/logo.png'; // Sesuaikan path sesuai kebutuhan Anda
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +19,17 @@ const Header: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Fungsi untuk smooth scroll
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',    
+      });
+    }
+  };
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -28,8 +39,9 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
-              <img src={logo} className={`ml-2 max-h-[40px] ${
+            {/* Logo link, biasanya mengarah ke home atau bagian atas halaman */}
+            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="flex items-center">
+              <img src={logo} alt="Rinkweb Studio Logo" className={`ml-2 max-h-[40px] ${
                 isScrolled ? 'filter-none' : 'filter brightness-0 invert'
               }`}>
               </img>
@@ -38,10 +50,14 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['Home', 'About', 'Services', 'Portfolio', 'Blog', 'Contact'].map((item) => (
+            {['Home', 'About', 'Pricing', 'Portfolio', 'Faq'].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
+                onClick={(e) => { // Tambahkan onClick handler di sini
+                  e.preventDefault(); // Mencegah perilaku default (loncat)
+                  scrollToSection(item.toLowerCase()); // Panggil fungsi smooth scroll
+                }}
                 className={`font-medium transition-colors duration-200 ${
                   isScrolled ? 'text-secondary-800 hover:text-primary' : 'text-white hover:text-primary-100'
                 }`}
@@ -72,12 +88,16 @@ const Header: React.FC = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-4 animate-fade-in-down">
             <div className="flex flex-col space-y-4">
-              {['Home', 'About', 'Services', 'Portfolio', 'Blog', 'Contact'].map((item) => (
+              {['Home', 'About', 'Services', 'Portfolio', 'Contact'].map((item) => (
                 <a 
                   key={item} 
                   href={`#${item.toLowerCase()}`}
+                  onClick={(e) => { 
+                    e.preventDefault(); 
+                    scrollToSection(item.toLowerCase());
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="text-secondary-800 hover:text-primary font-medium transition-colors duration-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item}
                 </a>

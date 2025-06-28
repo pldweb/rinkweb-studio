@@ -9,6 +9,9 @@ import ArticlesSection from './components/ArticlesSection';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import OwnerSection from './components/Owner';
+import FAQSection from './components/FaqSection';
+import WhatsAppChatButton from './components/WaButton';
+import LastSection from './components/LastSection';
 
 function App() {
   return (
@@ -21,7 +24,10 @@ function App() {
         <PackagesSection />
         <PortfolioSection />
         <OwnerSection />
-        <ArticlesSection />
+        <FAQSection />
+        <LastSection />
+        {/* <ArticlesSection /> */}
+        <WhatsAppChatButton />
       </main>
       <Footer />
       <ScrollToTop />

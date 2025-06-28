@@ -1,0 +1,25 @@
+.whatsapp-button {
+  position: fixed; /* Membuat tombol tetap di layar */
+  bottom: 80px;    /* Jarak dari bawah */
+  right: 20px;     /* Jarak dari kanan */
+  z-index: 1000;   /* Memastikan tombol di atas elemen lain */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;     /* Ukuran tombol */
+  height: 60px;
+  background-color: #25d366; /* Warna hijau WhatsApp */
+  border-radius: 50%; /* Membuat tombol bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  transition: transform 0.3s ease-in-out; /* Transisi saat hover */
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Efek membesar saat di-hover */
+}
+
+.whatsapp-icon {
+  width: 35px; /* Ukuran ikon di dalam tombol */
+  height: 35px;
+  filter: brightness(0) invert(1); /* Membuat ikon putih jika aslinya hitam */
+}
