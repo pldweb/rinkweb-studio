@@ -1,6 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  // Hanya satu deklarasi 'content' di tingkat teratas
+  content: {
+    // 'enabled: true' biasanya tidak perlu karena ini default,
+    // tapi tidak salah jika ingin eksplisit.
+    enabled: true,
+    // Ini adalah daftar sumber konten yang akan di-scan oleh Tailwind.
+    // Pastikan semua path file yang mungkin berisi kelas Tailwind ada di sini.
+    content: [
+      './index.html', // Jangan lupa index.html jika Anda menggunakan kelas di sana
+      './src/**/*.{js,ts,jsx,tsx}',
+      // Tambahkan path lain jika ada:
+      // './public/**/*.html', // Jika Anda punya file HTML di public
+      // './components/**/*.{js,ts,jsx,tsx}', // Contoh jika Anda tidak pakai 'src'
+      // './pages/**/*.{js,ts,jsx,tsx}', // Jika menggunakan Next.js pages router
+      // './app/**/*.{js,ts,jsx,tsx}', // Jika menggunakan Next.js app router
+      // './*.{js,ts,jsx,tsx}', // Untuk file di root
+    ],
+  },
   theme: {
     extend: {
       colors: {
@@ -40,8 +57,4 @@ export default {
     },
   },
   plugins: [],
-  content: {
-    enabled: true,
-    content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
-  }
 };
