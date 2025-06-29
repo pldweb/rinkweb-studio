@@ -10,10 +10,10 @@ const ConsultationCTASection: FC = () => {
     <section id="consultation-cta" className="py-20 text-secondary-950 text-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Siap Wujudkan Website Impian Anda?
+          Siap Wujudkan Website Anda?
         </h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90 text-secondary-950">
-          Dapatkan konsultasi gratis dengan tim ahli kami untuk merancang strategi website yang sesuai dengan tujuan bisnis Anda. Mari diskusikan ide Anda!
+          Konsultasi gratis dengan ahlinya untuk merancang strategi website yang sesuai dengan tujuan bisnis Anda. Mari diskusikan!
         </p>
         <a
           href={whatsappUrl}
@@ -23,7 +23,7 @@ const ConsultationCTASection: FC = () => {
           aria-label="Jadwalkan Konsultasi Gratis via WhatsApp"
         >
           <MessageSquareText className="w-6 h-6 mr-3" /> {/* Ikon pesan/chat */}
-          Jadwalkan Konsultasi Gratis
+          Jadwalkan Konsultasi
         </a>
       </div>
     </section>

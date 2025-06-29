@@ -11,103 +11,112 @@ import projectspa from '../assets/project-spa.png';
 import projectdtj from '../assets/project-dtj.png'; 
 import projectaw from '../assets/project-aw.png'; 
 import projectwt from '../assets/project-wt.png'; 
+import projectjf from '../assets/project-jf.png';
 
 const categories = [
   "All",
   "Website Development",
-  "Mobile App"
+  "Mobile App",
+  "UI/UX Design",
 ];
 
 const projects = [
- {
-  id: 1,
-  title: "Tazkiyah Tour - Travel Umrah & Hajj",
-  category: "Website Development",
-  image: projecttt,
-  description: "Website resmi Tazkiyah Tour untuk informasi paket Umrah & Haji.",
-  link: "https://tazkiyahtour.com"
-},
-{
-  id: 2,
-  title: "MyCommerce - B2B E-commerce",
-  category: "Website Development",
-  image: projectmc,
-  description: "Landing page e-commerce B2B untuk transaksi antar pelaku usaha.",
-  link: "https://pldweb.github.io/mc-landing"
-},
-{ 
-  id: 3,
-  title: "Sehat Bahagia - Community Pyschology",
-  category: "Website Development",
-  image: projectsb,
-  description: "Media edukasi seputar psikologi komunitas dan kesehatan mental.",
-  link: "https://sehatbahagia.com"
-},
-{ 
-  id: 4,
-  title: "SKET Creative - Creative Agency",
-  category: "Website Development",
-  image: projectsk,
-  description: "Portfolio digital layanan desain dan branding dari SKET Creative.",
-  link: "https://sketcreative.com"
-},
-{ 
-  id: 5,
-  title: "SINT Travel - Travel Umrah & Hajj",
-  category: "Website Development",
-  image: projectst,
-  description: "Website SINT Travel untuk informasi dan pendaftaran Umrah & Haji.",
-  link: "https://sinttravel.co.id"
-},
-{ 
-  id: 6,
-  title: "Bernia Wisata - Travel Umrah & Hajj",
-  category: "Website Development",
-  image: projectbs,
-  description: "Platform digital Bernia Wisata untuk layanan Umrah & Haji.",
-  link: "https://berniawisata.co.id"
-},
-{ 
-  id: 7,
-  title: "Salespage Aksana - Wedding Organizer Management System",
-  category: "Website Development",
-  image: projectspa,
-  description: "Salespage sistem manajemen wedding organizer Aksana.",
-  link: "https://pldweb.github.io/Salespage-Aksana"
-},
-{ 
-  id: 8,
-  title: "KasirKu",
-  category: "Website Development",
-  image: projectkk,
-  description: "Aplikasi kasir sederhana untuk pelaku usaha kecil dan UMKM.",
-  link: "https://pldweb.github.io/kasirku"
-},
-{ 
-  id: 9,
-  title: "Publika Dimensi Terbit Digital",
-  category: "Website Development",
-  image: projectdtj,
-  description: "Portal media digital untuk berita dan informasi publik.",
-  link: "https://publika.dimensiterbitdigital.com"
-},
-{ 
-  id: 10,
-  title: "Arsicon - Contractor & Interior Design",
-  category: "Website Development",
-  image: projectaw,
-  description: "Website portfolio jasa kontraktor dan interior desain.",
-  link: "https://arsicon.vercel.app"
-},
-{ 
-  id: 11,
-  title: "Wedding Organizer Website",
-  category: "Website Development",
-  image: projectwt,
-  description: "Website untuk promosi layanan dan galeri wedding organizer.",
-  link: "https://xit.aksana.co.id"
-}
-
+  {
+    id: 1,
+    title: "Tazkiyah Tour - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projecttt,
+    description: "Website resmi Tazkiyah Tour untuk informasi paket Umrah & Haji.",
+    link: "https://tazkiyahtour.com"
+  },
+  {
+    id: 2,
+    title: "MyCommerce - B2B E-commerce",
+    category: "Website Development",
+    image: projectmc,
+    description: "Landing page e-commerce B2B untuk transaksi antar pelaku usaha.",
+    link: "https://pldweb.github.io/mc-landing"
+  },
+  { 
+    id: 3,
+    title: "Sehat Bahagia - Community Pyschology",
+    category: "Website Development",
+    image: projectsb,
+    description: "Media edukasi seputar psikologi komunitas dan kesehatan mental.",
+    link: "https://sehatbahagia.com"
+  },
+  { 
+    id: 4,
+    title: "SKET Creative - Creative Agency",
+    category: "Website Development",
+    image: projectsk,
+    description: "Portfolio digital layanan desain dan branding dari SKET Creative.",
+    link: "https://sketcreative.com"
+  },
+  { 
+    id: 5,
+    title: "SINT Travel - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projectst,
+    description: "Website SINT Travel untuk informasi dan pendaftaran Umrah & Haji.",
+    link: "https://sinttravel.co.id"
+  },
+  { 
+    id: 6,
+    title: "Bernia Wisata - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projectbs,
+    description: "Platform digital Bernia Wisata untuk layanan Umrah & Haji.",
+    link: "https://berniawisata.co.id"
+  },
+  { 
+    id: 7,
+    title: "Salespage Aksana - Wedding Organizer Management System",
+    category: "Website Development",
+    image: projectspa,
+    description: "Salespage sistem manajemen wedding organizer Aksana.",
+    link: "https://pldweb.github.io/Salespage-Aksana"
+  },
+  { 
+    id: 8,
+    title: "KasirKu",
+    category: "Website Development",
+    image: projectkk,
+    description: "Aplikasi kasir sederhana untuk pelaku usaha kecil dan UMKM.",
+    link: "https://pldweb.github.io/kasirku"
+  },
+  { 
+    id: 9,
+    title: "Publika Dimensi Terbit Digital",
+    category: "Website Development",
+    image: projectdtj,
+    description: "Portal media digital untuk berita dan informasi publik.",
+    link: "https://publika.dimensiterbitdigital.com"
+  },
+  { 
+    id: 10,
+    title: "Arsicon - Contractor & Interior Design",
+    category: "Website Development",
+    image: projectaw,
+    description: "Website portfolio jasa kontraktor dan interior desain.",
+    link: "https://arsicon.vercel.app"
+  },
+  { 
+    id: 11,
+    title: "Wedding Organizer Website",
+    category: "Website Development",
+    image: projectwt,
+    description: "Website untuk promosi layanan dan galeri wedding organizer.",
+    link: "https://xit.aksana.co.id"
+  },
+  { 
+    id: 12,
+    title: "Jannah Firdaus - Travel Umrah & Hajj",
+    category: "Mobile App",
+    image: projectjf,
+    description: "Aplikasi iOS dan android untuk jamaah umrah & haji.",
+    link: "https://apps.apple.com/us/app/jannah-firdaus-tour-dan-travel/id6471333645"
+  }
 ];
 
 const PortfolioSection: React.FC = () => {

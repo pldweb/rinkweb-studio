@@ -14,28 +14,28 @@ const FAQSection: FC = () => {
   // Data FAQ Anda
   const faqData: FAQItem[] = [
     {
-      question: "Berapa lama waktu yang dibutuhkan untuk membuat website?",
-      answer: "Waktu pengerjaan website bervariasi tergantung pada kompleksitas proyek, fitur yang dibutuhkan, dan kecepatan Anda dalam memberikan materi. Umumnya, website sederhana memakan waktu 2-4 minggu, sedangkan website e-commerce atau kustom bisa 6-12 minggu atau lebih.",
+      question: "Bagaimana cara prosedur pemesanan Website?",
+      answer: "Proses pemesanan website dapat dilakukan langsung dengan memilih paket yang ada di website dan mengkonsultasikannya via Whatsapp kepada nomor kontak kami yang tertera. Selanjutnya terkait pembayaran dapat dilakukan setelah deal terkait apa saja kebutuhan yang telah diajukan dan disetujui.",
     },
     {
-      question: "Apakah saya perlu menyediakan domain dan hosting sendiri?",
-      answer: "Tidak selalu. Kami bisa membantu Anda dalam proses pendaftaran domain dan hosting, atau Anda bisa menyediakannya sendiri jika sudah memiliki preferensi. Kami akan memberikan panduan yang diperlukan.",
+      question: "Bagaimana sistem pembayaran di Rinkweb Studio?",
+      answer: "Skema pembayaran dilakukan secara dua tahap : Down Payment (DP) sebesar 50% dibayarkan di awal sebagai tanda kesepakatan dan dimulainya proyek. Pelunasan 50% sisanya dilakukan setelah website selesai dan siap untuk diluncurkan (go-live), sebelum akses penuh diberikan kepada klien.",
     },
     {
-      question: "Bagaimana proses revisi desain dan konten?",
-      answer: "Kami akan menyediakan beberapa putaran revisi untuk desain dan konten. Biasanya, ada 2-3 putaran revisi mayor untuk desain dan revisi minor tak terbatas untuk konten. Kami ingin memastikan Anda puas dengan hasilnya.",
+      question: "Berapa lama waktu yang dibutuhkan untuk pengerjaannya?",
+      answer: "Estimasi waktu pengerjaan website atau pun aplikasi sekitar 7-14 hari sejak pembayaran dan pengiriman bahan konten untuk memproses pembuatannya.",
     },
     {
-      question: "Apakah Rinkweb Studio menyediakan layanan pemeliharaan website?",
-      answer: "Ya, kami menyediakan paket layanan pemeliharaan website yang mencakup pembaruan rutin, backup data, pemantauan keamanan, dan dukungan teknis. Ini memastikan website Anda selalu optimal dan aman.",
+      question: "Apakah ada biaya tersembunyi?",
+      answer: "Tidak ada biaya tersembunyi. Semua biaya akan dijelaskan secara transparan di awal kesepakatan. Biaya tambahan hanya akan timbul jika ada permintaan pengubahan major pada website.",
     },
     {
-      question: "Bisakah website saya dioptimasi untuk SEO?",
-      answer: "Tentu. Semua website yang kami bangun dirancang dengan struktur SEO-friendly dasar. Kami juga menawarkan layanan optimasi SEO lanjutan sebagai bagian dari paket tertentu atau sebagai layanan terpisah untuk membantu website Anda muncul di peringkat teratas pencarian.",
+      question: "Bagaimana jika saya membutuhkan perubahan pada website?",
+      answer: "Perubahan minor atau update website dapat kami bantu sesuai kesepakatan yang telah dilakukan.",
     },
     {
       question: "Bagaimana cara memulai proyek dengan Rinkweb Studio?",
-      answer: "Sangat mudah! Anda bisa menghubungi kami melalui formulir kontak di website, WhatsApp, atau email. Kami akan menjadwalkan sesi konsultasi gratis untuk memahami kebutuhan Anda dan memberikan penawaran terbaik.",
+      answer: "Sangat mudah! Anda bisa menghubungi kami melalui kontak di website untuk membahas jadwal diskusi via zoom. Kami akan menjadwalkan sesi konsultasi gratis untuk memahami kebutuhan Anda dan memberikan penawaran terbaik.",
     },
   ];
 

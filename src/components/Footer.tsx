@@ -39,9 +39,9 @@ const Footer: FC = () => { // Gunakan FC di sini
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    onClick={(e) => { // Tambahkan onClick handler di sini
-                      e.preventDefault(); // Mencegah perilaku default (loncat)
-                      scrollToSection(item.toLowerCase()); // Panggil fungsi smooth scroll
+                    onClick={(e) => { 
+                      e.preventDefault();
+                      scrollToSection(item.toLowerCase()); 
                     }}
                     className="text-gray-400 hover:text-primary transition-colors duration-200"
                   >
