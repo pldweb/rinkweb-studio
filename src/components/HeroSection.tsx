@@ -64,14 +64,14 @@ const HeroSection: React.FC = () => {
               <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto md:mx-0">
                   <p className="text-primary-300 font-medium mb-3 text-lg tracking-wide">{slide.subtitle}</p>
-                  <h2 className="text-4xl md:text-5xl lg:text-[70px] font-bold text-white leading-tight mb-6">
+                  <h2 className="text-3xl md:text-5xl lg:text-[70px] font-bold text-white leading-tight mb-6">
                     {slide.title}
                   </h2>
                   <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl">
                     {slide.description}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <a href={wa} className="bg-primary hover:bg-primary-600 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center">
+                    <a href={wa} className="bg-primary hover:bg-primary-600 text-white px-6 py-3 rounded-md font-medium transition-all md:max-w-full max-w-[55%] duration-200 shadow-md hover:shadow-lg flex items-center justify-center">
                       {slide.ctaText}
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </a>
