@@ -40,4 +40,8 @@ export default {
     },
   },
   plugins: [],
+  content: {
+    enabled: true,
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
+  }
 };
