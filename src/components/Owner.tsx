@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
-import pribadi from '../assets/pribadi-2.jpg';
+import pribadi from '../assets/my-profile.png';
 
 const OwnerSection: React.FC = () => {
   return (
