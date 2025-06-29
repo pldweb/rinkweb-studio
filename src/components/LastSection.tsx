@@ -19,10 +19,10 @@ const ConsultationCTASection: FC = () => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-primary text-white font-bold px-8 py-4 rounded-full text-lg shadow-xl hover:bg-gray-100 hover:scale-105 transition-all duration-300"
+          className="inline-flex items-center bg-primary text-white font-bold px-8 py-4 rounded-full text-lg shadow-xl hover:bg-secondary-950 hover:scale-105 transition-all duration-300"
           aria-label="Jadwalkan Konsultasi Gratis via WhatsApp"
         >
-          <MessageSquareText className="w-6 h-6 mr-3" /> {/* Ikon pesan/chat */}
+          <MessageSquareText className="w-6 h-6 mr-3" />
           Jadwalkan Konsultasi
         </a>
       </div>
