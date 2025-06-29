@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import projectmc from '../assets/project-mc.png';
-import projectsb from '../assets/project-sb.png';
-import projectst from '../assets/project-st.png';
-import projectsk from '../assets/project-sk.png';
-import projecttt from '../assets/project-tt.png';
-import projectbs from '../assets/project-bs.png';
-import projectkk from '../assets/project-kk.png'; 
-import projectspa from '../assets/project-spa.png'; 
-import projectdtj from '../assets/project-dtj.png'; 
-import projectaw from '../assets/project-aw.png'; 
-import projectwt from '../assets/project-wt.png'; 
-import projectjf from '../assets/project-jf.png';
+import projectmc from '../assets/project-mc.webp';
+import projectsb from '../assets/project-sb.webp';
+import projectst from '../assets/project-st.webp';
+import projectsk from '../assets/project-sk.webp';
+import projecttt from '../assets/project-tt.webp';
+import projectbs from '../assets/project-bs.webp';
+import projectkk from '../assets/project-kk.webp'; 
+import projectspa from '../assets/project-spa.webp'; 
+import projectdtj from '../assets/project-dtj.webp'; 
+import projectaw from '../assets/project-aw.webp'; 
+import projectwt from '../assets/project-wt.webp'; 
+import projectjf from '../assets/project-jf.webp';
 
 const categories = [
   "All",
