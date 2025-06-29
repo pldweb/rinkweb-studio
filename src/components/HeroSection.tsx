@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
               <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto md:mx-0">
                   <p className="text-primary-300 font-medium mb-3 text-lg tracking-wide">{slide.subtitle}</p>
-                  <h2 className="text-4xl md:text-5xl lg:text-[60px] font-bold text-white font-heading leading-tight mb-6">
+                  <h2 className="text-4xl md:text-5xl lg:text-[70px] font-bold text-white leading-tight mb-6">
                     {slide.title}
                   </h2>
                   <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl">
