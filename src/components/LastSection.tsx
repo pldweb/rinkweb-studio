@@ -10,7 +10,7 @@ const ConsultationCTASection: FC = () => {
     <section id="consultation-cta" className="py-20 text-secondary-950 text-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Siap Wujudkan Website Anda?
+          Siap Wujudkan <span className="text-primary">Website Anda?</span> 
         </h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-90 text-secondary-950">
           Konsultasi gratis dengan ahlinya untuk merancang strategi website yang sesuai dengan tujuan bisnis Anda. Mari diskusikan!
