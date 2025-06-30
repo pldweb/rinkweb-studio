@@ -43,7 +43,7 @@ const projects = [
     category: "Website Development",
     image: projectsb,
     description: "Media edukasi seputar psikologi komunitas dan kesehatan mental.",
-    link: "https://sehatbahagia.com"
+    link: "https://sehatbahagia.id"
   },
   { 
     id: 4,
