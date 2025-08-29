@@ -67,9 +67,6 @@ const PricingChatBot: React.FC = () => {
           
           {/* Card 2 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 relative">
-            <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold px-3 py-1 transform translate-x-2 -translate-y-2 rotate-12">
-              POPULER
-            </div>
             <div className="bg-primary text-white p-4 text-center">
               <h3 className="text-xl font-bold">Paket Premium</h3>
             </div>
