@@ -62,7 +62,7 @@ const WhyChatBot: React.FC = () => {
 
         <div className="text-center mt-12">
           <a 
-            href="/hubungi" 
+            href="https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rinkweb%20Studio%0A%0ABisakah%20kita%20agendakan%20diskusi?" 
             className="inline-block bg-primary hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300"
           >
             Hubungi Kami Sekarang
