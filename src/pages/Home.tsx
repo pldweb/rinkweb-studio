@@ -24,8 +24,8 @@ const Home: React.FC = () => {
         <HeroSection />
         <AboutSection />
         <WorkflowSection />
-        <PackagesSection />
         <PortfolioSection />
+        <PackagesSection />
         <OwnerSection />
         <FAQSection />
         <LastSection />

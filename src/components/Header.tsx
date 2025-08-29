@@ -83,22 +83,22 @@ const Header: React.FC = () => {
             >
               ChatBot
             </Link>
-            <Link 
+            {/* <Link 
               to="/hubungi" 
               className={`font-medium transition-colors duration-200 ${
                 location.pathname !== '/' || isScrolled ? 'text-secondary-800 hover:text-primary' : 'text-white hover:text-primary-100'
               }`}
             >
               Hubungi
-            </Link>
-            <Link 
+            </Link> */}
+            {/* <Link 
               to="/kebijakan-privasi" 
               className={`font-medium transition-colors duration-200 ${
                 location.pathname !== '/' || isScrolled ? 'text-secondary-800 hover:text-primary' : 'text-white hover:text-primary-100'
               }`}
             >
               Kebijakan Privasi
-            </Link>
+            </Link> */}
             <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rinkweb%20Studio%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg">
               Yuk Diskusi
             </a>
@@ -143,20 +143,20 @@ const Header: React.FC = () => {
               >
                 ChatBot
               </Link>
-              <Link 
+              {/* <Link 
                 to="/hubungi" 
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-secondary-800 hover:text-primary font-medium transition-colors duration-200"
               >
                 Hubungi
-              </Link>
-              <Link 
+              </Link> */}
+              {/* <Link 
                 to="/kebijakan-privasi" 
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-secondary-800 hover:text-primary font-medium transition-colors duration-200"
               >
                 Kebijakan Privasi
-              </Link>
+              </Link> */}
               <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Rinkweb%20Studio%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg">
               Yuk Diskusi
             </a>
