@@ -1,37 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import WorkflowSection from './components/WorkflowSection';
-import PackagesSection from './components/PackagesSection';
-import PortfolioSection from './components/PortfolioSection';
-import ArticlesSection from './components/ArticlesSection';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import OwnerSection from './components/Owner';
-import FAQSection from './components/FaqSection';
-import WhatsAppChatButton from './components/WaButton';
-import LastSection from './components/LastSection';
+import Home from './pages/Home';
+import About from './pages/About';
+import ChatBot from './pages/ChatBot';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <WorkflowSection />
-        <PackagesSection />
-        <PortfolioSection />
-        <OwnerSection />
-        <FAQSection />
-        <LastSection />
-        {/* <ArticlesSection /> */}
-        <WhatsAppChatButton />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-white">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tentang" element={<About />} />
+            <Route path="/chatbot" element={<ChatBot />} />
+            <Route path="/hubungi" element={<Contact />} />
+            <Route path="/kebijakan-privasi" element={<Privacy />} />
+          </Routes>
+          <Footer />
+          <ScrollToTop />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 
