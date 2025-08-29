@@ -4,6 +4,17 @@ import { ArrowRight } from 'lucide-react';
 const wa: string = "https://wa.me/62895365441554";
 
 const HeroChatBot: React.FC = () => {
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth', // Ini yang membuat animasinya halus
+        block: 'start',     // Mengatur posisi scroll agar elemen berada di bagian atas view
+      });
+    }
+  };
+
   return (
     <section className="relative pt-[7.5rem] pb-20 bg-secondary-950 text-white" id="chatbot-hero">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,13 +29,18 @@ const HeroChatBot: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href={wa} 
-                className="bg-primary hover:bg-gray-100 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center max-w-fit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center max-w-fit"
               >
                 Konsultasi Gratis
                 <ArrowRight className="ml-2 w-4 h-4" />
               </a>
               <a 
-                href="#fitur" 
+                href="#fitur" onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('fitur')
+                }}
                 className="bg-transparent hover:bg-white/10 text-white border border-white px-6 py-3 rounded-md font-medium transition-all duration-200 flex items-center justify-center max-w-fit"
               >
                 Lihat Fitur

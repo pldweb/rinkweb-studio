@@ -18,7 +18,7 @@ const PricingChatBot: React.FC = () => {
           {/* Card 1 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300">
             <div className="bg-secondary text-white p-4 text-center">
-              <h3 className="text-xl font-bold">Paket Standar</h3>
+              <h3 className="text-xl font-bold">RinkBot Basic</h3>
             </div>
             <div className="p-6">
               <div className="text-center mb-6">
@@ -58,7 +58,7 @@ const PricingChatBot: React.FC = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <a href="/hubungi" className="inline-block bg-secondary hover:bg-secondary-900 text-white font-medium py-2 px-6 rounded-lg transition duration-300 w-full">
+                <a href="https://api.whatsapp.com/send?phone=+62895365441554&text=Halo%20saya%20tertarik%20dengan%20paket%20Rink%20Basic" className="inline-block bg-secondary hover:bg-secondary-900 text-white font-medium py-2 px-6 rounded-lg transition duration-300 w-full">
                   Pilih Paket
                 </a>
               </div>
@@ -68,11 +68,11 @@ const PricingChatBot: React.FC = () => {
           {/* Card 2 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 relative">
             <div className="bg-primary text-white p-4 text-center">
-              <h3 className="text-xl font-bold">Paket Premium</h3>
+              <h3 className="text-xl font-bold">RinkBot Pro</h3>
             </div>
             <div className="p-6">
               <div className="text-center mb-6">
-                <span className="text-4xl font-bold">Rp 89.999</span>
+                <span className="text-4xl font-bold">Rp 99.999</span>
                 <span className="text-gray-600">/bulan</span>
               </div>
               <ul className="space-y-3 mb-6">
@@ -108,7 +108,7 @@ const PricingChatBot: React.FC = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <a href="/hubungi" className="inline-block bg-primary hover:bg-primary-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 w-full">
+                <a href="https://api.whatsapp.com/send?phone=+62895365441554&text=Halo%20saya%20tertarik%20dengan%20paket%20Rink%20Pro" target='_blank' className="inline-block bg-primary hover:bg-primary-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300 w-full">
                   Pilih Paket
                 </a>
               </div>
