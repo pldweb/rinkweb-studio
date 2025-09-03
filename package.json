@@ -7,8 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "type-check": "tsc --noEmit",
     "preview": "vite preview",
-    "deploy": "vite build && cp -r public/* dist/ && echo 'Build completed with routing configuration files'"
+    "deploy": "vite build && cp -r public/* dist/ && echo 'Build completed with routing configuration files'",
+    "deploy:netlify": "npm run build",
+    "deploy:vercel": "npm run build",
+    "deploy:github-pages": "npm run build"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001726",
