@@ -2,8 +2,8 @@
 
 Panduan ini menjelaskan cara deploy aplikasi RinkWeb Studio dengan konfigurasi:
 - **Backend Laravel**: Deploy ke server sendiri di `admin.rinkwebstudio.com`
-- **Frontend React**: Deploy ke Vercel di `rinkwebstudio.com`
 - **Database**: MySQL di server sendiri
+- **Frontend React**: Bagian dari Laravel (Inertia.js)
 
 ## 📋 Persiapan Server
 
@@ -100,52 +100,11 @@ Buka browser dan akses:
 - `https://admin.rinkwebstudio.com` - Halaman login admin
 - `https://admin.rinkwebstudio.com/api/health` - Health check API
 
-## ⚡ Deploy Frontend ke Vercel
+## 🌐 Akses Aplikasi
 
-### 1. Persiapan Repository Frontend
-```bash
-# Copy environment production
-cd frontend
-cp .env.production.server .env.production
-```
-
-### 2. Setup Vercel
-1. Login ke [Vercel Dashboard](https://vercel.com/dashboard)
-2. Klik "New Project"
-3. Import repository GitHub Anda
-4. Pilih folder `frontend` sebagai root directory
-5. Framework preset: **Vite**
-6. Build command: `npm run build`
-7. Output directory: `dist`
-
-### 3. Environment Variables di Vercel
-Tambahkan environment variables berikut di Vercel Dashboard:
-
-```env
-VITE_APP_NAME=RinkWeb Studio
-VITE_APP_ENV=production
-VITE_APP_URL=https://rinkwebstudio.com
-VITE_API_BASE_URL=https://admin.rinkwebstudio.com
-VITE_API_URL=https://admin.rinkwebstudio.com/api
-VITE_BACKEND_URL=https://admin.rinkwebstudio.com
-VITE_CONTACT_EMAIL=hello@rinkwebstudio.com
-VITE_COMPANY_NAME=RinkWeb Studio
-```
-
-### 4. Custom Domain di Vercel
-1. Di Vercel Dashboard → Project Settings → Domains
-2. Tambahkan domain: `rinkwebstudio.com`
-3. Tambahkan domain: `www.rinkwebstudio.com` (redirect ke rinkwebstudio.com)
-4. Update DNS records di domain provider:
-   ```
-   Type: CNAME
-   Name: @
-   Value: cname.vercel-dns.com
-   
-   Type: CNAME
-   Name: www
-   Value: cname.vercel-dns.com
-   ```
+Setelah deployment selesai, aplikasi dapat diakses melalui:
+- **Admin Panel**: `https://admin.rinkwebstudio.com`
+- **Website Utama**: `https://admin.rinkwebstudio.com` (frontend terintegrasi dengan backend)
 
 ## 🔄 Workflow Update
 
@@ -164,15 +123,20 @@ git pull origin main
 ./deploy-server.sh
 ```
 
-### Update Frontend (Vercel)
+### Update Aplikasi Lengkap
 ```bash
-# Push ke repository
-git add .
-git commit -m "Update frontend"
-git push origin main
-```
+# SSH ke server
+ssh user@your-server-ip
 
-Vercel akan otomatis deploy perubahan frontend.
+# Masuk ke directory project
+cd /var/www/rinkweb-studio/backend
+
+# Pull perubahan terbaru (backend + frontend)
+git pull origin main
+
+# Jalankan deployment
+./deploy-server.sh
+```
 
 ## 🔧 Maintenance & Monitoring
 
@@ -238,9 +202,9 @@ php artisan tinker
 ```
 
 ### Frontend Issues
-- Check Vercel deployment logs di dashboard
-- Verify environment variables
-- Check API connectivity dari browser console
+- Check browser console untuk error JavaScript
+- Verify Vite build process
+- Check Inertia.js configuration
 
 ## 📞 Support
 
@@ -255,37 +219,26 @@ Jika mengalami masalah:
 
 ## 📝 Checklist Deployment
 
-### Backend Server ✅
+### Server Deployment ✅
 - [ ] Server requirements installed
 - [ ] Repository cloned
 - [ ] MySQL database setup
 - [ ] Environment variables configured
-- [ ] Dependencies installed
+- [ ] Dependencies installed (Composer & NPM)
 - [ ] Database migrated
 - [ ] Nginx configured
 - [ ] SSL certificate installed
 - [ ] Permissions set correctly
 - [ ] Health check passed
 
-### Frontend Vercel ✅
-- [ ] Repository connected to Vercel
-- [ ] Environment variables set
-- [ ] Build settings configured
-- [ ] Custom domain added
-- [ ] DNS records updated
-- [ ] SSL certificate active
-- [ ] Deployment successful
-- [ ] API connectivity verified
-
-### Post-Deployment ✅
+### Application ✅
 - [ ] Admin login working
-- [ ] API endpoints responding
-- [ ] Frontend-backend communication
+- [ ] Frontend assets built
+- [ ] Inertia.js working properly
 - [ ] Database backup scheduled
 - [ ] Monitoring setup
 - [ ] Documentation updated
 
 🎉 **Deployment Complete!**
 
-- Backend Admin: https://admin.rinkwebstudio.com
-- Frontend Website: https://rinkwebstudio.com
+- Admin Panel & Website: https://admin.rinkwebstudio.com
