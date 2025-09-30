@@ -12,6 +12,8 @@ import projectdtj from '../assets/project-dtj.webp';
 import projectaw from '../assets/project-aw.webp'; 
 import projectwt from '../assets/project-wt.webp'; 
 import projectjf from '../assets/project-jf.webp';
+import projectfi from '../assets/project-fi.webp';
+
 
 const categories = [
   "All",
@@ -28,6 +30,14 @@ const projects = [
     image: projecttt,
     description: "Website resmi Tazkiyah Tour untuk informasi paket Umrah & Haji.",
     link: "https://tazkiyahtour.com"
+  },
+  {
+    id: 13,
+    title: "Fath Indah - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projectfi,
+    description: "Website branding Fath Indah untuk informasi paket Umrah & Haji.",
+    link: "https://fathindah.com"
   },
   {
     id: 2,
