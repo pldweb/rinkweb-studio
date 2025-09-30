@@ -6,7 +6,7 @@ const packages = [
     id: 1,
     name: "Rink Starter",
     description: "Cocok untuk memulai branding di website",
-    price: "Rp3.8 Jt",
+    price: "Rp4.1 Jt",
     features: [
       { text: "UI/UX Eye Catching", included: true },
       { text: "Mobile-friendly design", included: true },
