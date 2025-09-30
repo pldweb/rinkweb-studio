@@ -45,7 +45,7 @@ const projects = [
     category: "Website Development",
     image: projectmc,
     description: "Landing page e-commerce B2B untuk transaksi antar pelaku usaha.",
-    link: "https://pldweb.github.io/mc-landing"
+    link: "https://mycommerce.my.id"
   },
   { 
     id: 3,
