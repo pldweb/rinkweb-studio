@@ -14,7 +14,7 @@ import projectwt from '../assets/project-wt.webp';
 import projectjf from '../assets/project-jf.webp';
 import projectfi from '../assets/project-fi.webp';
 import projectts from '../assets/project-tts.webp';
-
+import projectdw from '../assets/project-dw.webp';
 
 
 const categories = [
@@ -88,6 +88,14 @@ const projects = [
     image: projectbs,
     description: "Platform digital Bernia Wisata untuk layanan Umrah & Haji.",
     link: "https://berniawisata.co.id"
+  },
+  {
+    id: 14,
+    title: "Dialektika Wedding - Wedding Organizer",
+    category: "Website Development",
+    image: projectdw,
+    description: "Website Dialektika Wedding untuk informasi dan pendaftaran calon pengantin.",
+    link: "https://dialektikawedding.com"
   },
   { 
     id: 7,
