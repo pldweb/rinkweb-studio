@@ -13,6 +13,8 @@ import projectaw from '../assets/project-aw.webp';
 import projectwt from '../assets/project-wt.webp'; 
 import projectjf from '../assets/project-jf.webp';
 import projectfi from '../assets/project-fi.webp';
+import projectts from '../assets/project-tts.webp';
+
 
 
 const categories = [
@@ -30,6 +32,14 @@ const projects = [
     image: projecttt,
     description: "Website resmi Tazkiyah Tour untuk informasi paket Umrah & Haji.",
     link: "https://tazkiyahtour.com"
+  },
+  {
+    id: 20,
+    title: "Tunas Tours - Travel Umrah & Hajj",
+    category: "Website Development",
+    image: projectts,
+    description: "Website resmi Tunas Tours untuk informasi paket Umrah & Haji.",
+    link: "https://tunastours.com"
   },
   {
     id: 13,
